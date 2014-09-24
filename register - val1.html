@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html  xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head> 
+
+	<title>Register</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script>
+	
+	function validate()
+	{
+	var agevalue=document.forms["form1"]["age"].value;
+	if (agevalue < 18)
+	{
+	alert("You are too Young");	
+	}
+	
+	var username = document.forms["form1"]["name"].value;  
+	
+	if(username.length<3){
+	alert("You must have a name of more then 3 characters");
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+</script>
+
+
+
+</head>
+
+<body>
+
+
+<div id="banner">
+	<center><h1><img src="banner.png" alt="banner" /></h1></center>
+</div>
+
+<div id="navbar">
+<h1></h1>
+	<center>
+		<ul id="navigation">
+			<li><a href="index.html"> Home</a></li>
+			<li><a href="members.html">Members</a></li>
+			<li><a href="ladders.html">Ladders</a></li>
+			<li><a href="register.html">Register</a></li>
+			<li><a href="log-in.html">Log-in</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</center>
+</div>
+
+<center>
+<form name="form1" action ="mailto:ianbyrne1@yahoo.ie" onsubmit="validate()" method="post">
+
+		<table>
+			<tr>
+
+				<td>Username:</td>
+				<td><input name="name" type="text" value="" size="20" /></td>
+			</tr>
+			
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password" size="20" /></td>
+			</tr>
+			
+			<tr>
+				<td>E-mail:</td>
+				<td><input type="text" name="email" size="20" /></td>
+			</tr>
+			
+			<tr>
+				<td>Age:</td>
+				<td><input name="age" size="20" /></td>
+			</tr>
+			
+			<tr>
+				<td>Gender:</td>
+				<td><input type="radio" name="gender" value="male" /> Male<br /></td>
+				<td><input type="radio" name="gender" value="female" /> Female<br /></td>
+			</tr>
+			
+			<tr>
+			<td>Select year:</td>
+				<td><select>
+					<option></option>
+					<option>1st Year</option>
+					<option>2nd Year</option>
+					<option>3rd Year</option>
+					<option>4th Year</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+			<td>E-mail notification:</td>
+			<td><input type="checkbox" name="Yes" value="Yes" /><br /></td>
+			</tr>
+			
+			<tr>
+				<td><input type="submit" value="Submit" /> </td>
+			</tr>
+			
+			
+		</table>
+		</form>
+</center>
+	
+</body>
+
+</html>

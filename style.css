@@ -1,0 +1,50 @@
+body li {
+background-color: white;
+font-family: 'ABeeZee', sans-serif;
+}
+
+#navigation{ 
+list-style: none; 
+border: 1px solid #000; 
+}
+
+#navigation li { 
+display: inline; 
+margin-right: 75px;
+}
+
+#navigation li a:hover{
+color:#FF0066
+}
+
+#navigation li a{ 
+color:black
+}
+
+#navigation a:link {
+text-decoration:none;
+}
+
+#members table td{
+border: 1px solid black;
+width: 256px;
+height:256px;
+}
+
+
+#ladders  table td{
+border: 1px solid black;
+width: 256px;
+height:256px;
+}
+
+#ladders2  table td{
+border: 1px solid black;
+width: 256px;
+height:256px;; 
+}
+
+
+
+
+
